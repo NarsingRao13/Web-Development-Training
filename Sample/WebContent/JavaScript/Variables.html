@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<input id="in" type="text">
+		<button id = "btn">show</button>
+		<p id="p"></p>
+		
+		<script type="text/javascript">
+			document.getElementById("btn").onclick = function(){
+				var data = "";
+				data = document.getElementById("in").value;
+				document.getElementById("p").innerHTML = data;
+				
+			}
+		</script>
+	</body>
+</html>

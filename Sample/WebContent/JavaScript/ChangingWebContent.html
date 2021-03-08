@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<P id = "p1">Hello Rao</P>
+		<button id = "btn1">Change text</button>
+		<P id = "p2">Hello UMA</P>
+		<button id = "btn2">Change text</button>
+		
+		<P id = "p3">CSS Text</P>
+		<button id = "btn3">Change CSS</button>
+		
+		<p id = "p4">Java Script</p>
+		<script type="text/javascript">
+			document.getElementById("btn1").onclick = function(){
+				document.getElementById("p1").innerHTML = "rhewhir";
+			};
+			
+			document.getElementById("btn2").onclick = function(){
+				document.getElementById("p2").innerHTML = "sfiu "+document.getElementById("p1").innerHTML;
+			};
+			
+			document.getElementById("btn3").onclick = function(){
+				document.getElementById("p3").style.color = "red";
+				document.getElementById("p3").style.fontSize = "32px";
+				document.getElementById("p4").style.display = "none";
+			};
+			
+			
+		</script>
+	</body>
+</html>
